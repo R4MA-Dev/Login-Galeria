@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index-style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icono.ico') }}" type="image/x-icon" />
+    <title>Bienvenido</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="no-hover welcome">Bienvenido, {{ current_user.username }}</a></li>
+            <li><a class="logout" href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2><span>Tu Galeria</span></h2>
+        <h4><span>Añadir Fotos</span> <button class="btn-img">+</button></h4>
+    </header>
+
+    <main id="main">
+    </main>
+
+    <footer>
+        <p>Login hecho por:<a href="https://github.com/Leoo1011" target="_blank"> Leandro Araujo</a><span> Desarrollador
+                Back-End</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/R4W1R0" target="_blank">Ramiro Mercado</a><span> Desarrollador Front-End</span>
+        </p>
+    </footer>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+</html>
