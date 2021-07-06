@@ -1,2 +1,11 @@
+# Ignora carpetas de python (venv y archivos compilados).
 virtual/
 __pycache__/
+
+# Archivos de emacs
+*.*~
+.[#]*.*
+*.*[#]
+
+# Bases de datos
+*.db
