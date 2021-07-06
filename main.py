@@ -8,7 +8,7 @@ from datetime import timedelta
 
 login_manager = LoginManager()
 
-app = Flask(__name__, template_folder="./static", static_folder="./static")
+app = Flask(__name__)
 
 app.config["SECRET_KEY"] = "-WLXT8jMzB6;d#[nSHQq''vQ`X|^KQ?KtcXR(.wm^(DRAYK~,|p- b`FxzTwYEl+"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
