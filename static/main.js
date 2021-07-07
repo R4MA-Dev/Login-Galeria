@@ -3,7 +3,7 @@ window.onload = () => {
     const main = document.querySelector("main");
 
     const main_content = localStorage.getItem("main-content");
-    main.innerHTML += main_content;
+    main.innerHTML += main_content ?? "";
     
     button.addEventListener("click", async (e) => {
         const img_src = await prompt("Introduce el link de tu imagen");
