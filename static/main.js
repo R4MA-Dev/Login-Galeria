@@ -1,8 +1,9 @@
 window.onload = () => {
-	const button = document.querySelector("button.btn-img");
+    const button = document.querySelector("button.btn-img");
     const main = document.querySelector("main");
 
     const main_content = localStorage.getItem("main-content");
+    main.innerHTML += main_content;
     
     button.addEventListener("click", async (e) => {
         const img_src = await prompt("Introduce el link de tu imagen");
@@ -34,7 +35,6 @@ window.onload = () => {
         img_title.appendChild(img_title_p);
         img_description.appendChild(img_description_p);
         
-        
         main.appendChild(container);
         main.style.setProperty("width", "100%");
     });
@@ -42,5 +42,5 @@ window.onload = () => {
 
 function save_all() {
     const main = document.querySelector("main#main");
-    localStorage.setItem("main-content", main.outerHTML);
+    localStorage.setItem("main-content", main.innerHTML);
 }
