@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_login import LoginManager, login_required, login_user, logout_user, current_user
 from flask_minify import minify
@@ -8,7 +9,7 @@ from datetime import timedelta
 
 login_manager = LoginManager()
 
-app = Flask(__name__, template_folder="./static", static_folder="./static")
+app = Flask(__name__)
 
 app.config["SECRET_KEY"] = "-WLXT8jMzB6;d#[nSHQq''vQ`X|^KQ?KtcXR(.wm^(DRAYK~,|p- b`FxzTwYEl+"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True

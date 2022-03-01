@@ -35,6 +35,7 @@
         padding-top: 20px !important;
     }
 }
+
 @media (max-width:425px){
     main {
         margin: 0 !important;
@@ -136,19 +137,19 @@ nav {
     grid-area: nav;
 }
 
-header{
+header {
     grid-area: header;
 }
 
-main{
+main {
     grid-area: main;
 }
 
-footer{
+footer {
     grid-area: footer;
 }
 
-main .img-title{
+main .img-title {
     text-align: center;
     font-weight: 600;
     font-family: sans-serif;
@@ -161,7 +162,7 @@ main .img-container {
     text-align: center;
 }
 
-main .img-description{
+main .img-description {
     text-align: justify;
     font-weight: 400;
     font-family: sans-serif;
@@ -174,7 +175,7 @@ main .img-container .img {
     margin: 0 auto;
 }
 
-img{
+img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
